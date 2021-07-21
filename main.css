@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+:root {
+    --body-background-color: hsl(233, 47%, 7%);
+    --heading-color: hsl(0, 0%, 100%);
+    --image-cover-color: hsl(277, 64%, 61%);
+    --stats-heading-color: hsla(0, 0%, 100%, 0.6);
+    --card-background-color: hsl(244, 38%, 16%);
+    --font-size: 15px;
+    --h3-font-size: 14px;
+    --font-familys: 'Inter', sans-serif;
+    --font-family: 'Lexend Deca', sans-serif;
+}
+
+ body {
+    background: hsl(233, 47%, 7%);
+    color: #eaeaea;
+    text-align: center;
+    font-size: var(--font-size);
+} 
+ 
+.card {
+    background-color: var(--card-background-color);
+    width: 36.5%;
+    height: 50vh;
+    position: absolute;
+    top: 10rem;
+    left: 15rem;
+    border-radius: 1rem 0rem 0rem 1rem; 
+} 
+
+ img {
+    position: absolute;
+    top: 0rem;
+    left: 35rem;
+    height: 50vh;
+    opacity: 0.6;
+    
+    border-radius:0rem 1rem 1rem 0rem; 
+   
+
+}  
+
+
+.heading {
+    font-size: var(--font-size);
+    font-family: var(--font-familys);
+    color: var(--heading-color);
+    text-align: left;
+    position: absolute;
+    top: 1rem;
+    padding: 0px 100px 0px 100px;
+    line-height: 1.5;
+
+}
+
+span {
+    color: var(--image-cover-color);
+}
+
+.info {
+    color: var(--stats-heading-color);
+    font-size: var(--h3-font-size);
+    font-family: var(--font-family);
+    text-align: left;
+    position: absolute;
+    top: 9rem;
+    left: -.8rem;
+     right:1.5rem; 
+    padding: 0px 110px;
+}
+
+.first-element {
+    position: absolute;
+    top: 15rem;
+    left: 6rem;
+    
+    font-size: var(--font-size);
+    text-align: left;
+}
+
+.first-element>h3 {
+    font-size: var(--h3-font-size);
+    color: var(--para-color);
+    position: absolute;
+    top: 2rem;
+}
+
+.second-element {
+    position: absolute;
+    top: 15rem;
+    left: 14rem;
+    text-align: left;
+}
+
+.second-element>h3 {
+    font-size: var(--h3-font-size);
+    color: var(--para-color);
+    position: absolute;
+    top: 2rem;
+}
+
+.third-element {
+    position: absolute;
+    top: 15rem;
+    left: 22rem;
+    text-align: left;
+}
+
+.third-element>h3 {
+    font-size: var(--h3-font-size);
+    color: var(--para-color);
+    position: absolute;
+    top: 2rem;
+}
+
+footer {
+    color: var(--heading-color);
+    font-size: var(--h3-font-size);
+    font-family: var(--font-family);
+    position: absolute;
+    top: 35rem;
+    left: 25rem;
+
+}
+
+a {
+    color: var(--image-cover-color);
+    text-decoration: none;
+}
+
+@media (max-width:700px) {
+  
+
+    .card {
+
+        background-color: var(--card-background-color);
+        border: 1px;
+        width: 72%;
+        height: 112vh;
+        padding: 1rem;
+        margin: 1rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+        border-radius: 10px 10px 10px 10px;
+
+
+    }
+
+
+    .image {
+        width: 100%;
+     
+        position: absolute;
+        top: .1rem;
+        z-index: 1;
+        height: 33vh;
+        border-radius: 10px 10px 0px 0px;
+        left: .01rem;
+        right: 10px;
+       
+    }
+
+
+  
+
+    .heading {
+        position: absolute;
+        top: 14rem;
+        padding: .5rem;
+        font-family: var(--font-family);
+        left: .5rem;
+        right: .5rem;
+        color: var(--heading-color);
+        text-align: center;
+    }
+
+    /* insight color change */
+    strong {
+        color: var(--image-cover-color);
+    }
+
+    /* para  */
+    .info {
+        color: var(--stats-heading-color);
+        position: absolute;
+        top: 23.9rem;
+        left: 2rem;
+        right: 2rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /*stats  */
+
+    .first-element {
+        position: absolute;
+        top: 32.5rem;
+        left: 5.5rem;
+    }
+
+    .first-element>h2,
+    .second-element>h2,
+    .third-element>h2 {
+        position: absolute;
+        left: 1.5rem;
+        color: #eaeaea;
+        font-family: var(--font-familys);
+
+    }
+
+    .second-element {
+        position: absolute;
+        top: 37.5rem;
+        left: 5.5rem;
+    }
+
+    .first-element>h3,
+    .second-element>h3,
+    .third-element>h3 {
+        position: absolute;
+        top: 2.5rem;
+        left: 1rem;
+        font-size: 14px;
+        font-family: var(--font-family);
+        font-weight: lighter;
+        color: var(--stats-heading-color);
+    }
+
+    .third-element {
+        position: absolute;
+        top: 43rem;
+        left: 5.5rem;
+    }
+
+    /* footer  */
+    footer {
+        position: absolute;
+        color: #eaeaea;
+        top: 52rem;
+        left: 2rem;
+    }
+}
