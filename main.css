@@ -16,13 +16,13 @@
     --font-family: 'Lexend Deca', sans-serif;
 }
 
- body {
+body {
     background: hsl(233, 47%, 7%);
     color: #eaeaea;
     text-align: center;
     font-size: var(--font-size);
-} 
- 
+}
+
 .card {
     background-color: var(--card-background-color);
     width: 39%;
@@ -30,20 +30,40 @@
     position: absolute;
     top: 10rem;
     left: 15rem;
-    border-radius: 1rem 0rem 0rem 1rem; 
-} 
+    border-radius: 1rem 0rem 0rem 1rem;
+}
 
- img {
+/* #card-top img {
+    
+    background-image: url('images/image-header-desktop.jpg');
+    background-repeat: no-repeat;
+    background-color: hsl(244, 38%, 16%);
+    background-blend-mode: multiply;
     position: absolute;
-    top: 0rem;
+    top: rem;
     left: 35rem;
     height: 50vh;
     opacity: 0.6;
-    
-    border-radius:0rem 1rem 1rem 0rem; 
-   
+    border-radius: 0rem 1rem 1rem 0rem;
+} */
 
-}  
+#card-top {
+    height: 50vh;
+    width: 33.6%;
+    position: absolute;
+    border-radius: 0rem 1rem 1rem 0rem;
+    top:10rem;
+    left:45rem;
+    background-color: var(--image-cover-color);
+}
+img{
+    opacity: .5;
+    height: 50vh;
+    border-radius:0rem 1rem 1rem 0rem  ;
+    position: absolute;
+    left:5rem;
+}
+    
 
 
 .heading {
@@ -70,7 +90,7 @@ span {
     position: absolute;
     top: 9rem;
     left: -.8rem;
-     right:1.5rem; 
+    right: 1.5rem;
     padding: 0px 110px;
 }
 
@@ -78,7 +98,7 @@ span {
     position: absolute;
     top: 15rem;
     left: 6rem;
-    
+
     font-size: var(--font-size);
     text-align: left;
 }
@@ -134,7 +154,7 @@ a {
 }
 
 @media (max-width:700px) {
-  
+
 
     .card {
 
@@ -153,26 +173,31 @@ a {
 
     }
 
-
-    .image {
-        width: 100%;
-     
+    #card-top {
+        height: 40vh;
+        width: 80.2%;
         position: absolute;
-        top: .1rem;
+        border-radius: 1rem 1rem 0rem 0rem;
+        top:1rem;
+        left:2rem;
         z-index: 1;
-        height: 33vh;
-        border-radius: 10px 10px 0px 0px;
-        left: .01rem;
-        right: 10px;
-       
+        background-color: var(--image-cover-color);
+    }
+    img{
+        opacity: .5;
+        height: 40vh;
+        border-radius:1rem 1rem  0rem 0rem ;
+        position: absolute;
+        left: 0rem;
+        width: 100%;
     }
 
 
-  
+
 
     .heading {
         position: absolute;
-        top: 14rem;
+        top: 14.5rem;
         padding: .5rem;
         font-family: var(--font-family);
         left: .5rem;
